@@ -29,7 +29,7 @@ public class Main
     s = new Scanner(System.in);
     int decrease = s.nextInt();
     for (int i = 0; i < decrease; i++) {
-      side2--; // increase side2 "decrease" times by 1, this is just to fill the requirements
+      side2--; // decrease side2 "decrease" times by 1, this is just to fill the requirements
     }
     
     hyp = Math.sqrt(Math.pow(side1,2) + Math.pow(side2,2));
