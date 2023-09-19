@@ -14,7 +14,7 @@ public class Main
     int side2 = s.nextInt(); // get side 2 length
     double hyp = Math.sqrt(Math.pow(side1,2) + Math.pow(side2,2)); // calculate hypotenuse length
     
-    int value = (int)hyp; // turn hyp into a int to truncate it
+    int value = (int)hyp; // cast hyp into a int to truncate it
     boolean yon = (hyp - value) == 0.0; // if subtracting the double - the truncated yields 0.0, it's a pythag triple
     
     System.out.println("The hypotenuse of this triangle is: " + hyp);
