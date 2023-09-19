@@ -40,5 +40,11 @@ public class Main
     System.out.println("The hypotenuse of this triangle is: " + hyp);
     System.out.println("This triangle is a pythagorean triple: " + yon);
     
+    int big = Integer.MAX_VALUE;
+    System.out.println(big-1);
+    System.out.println(big);
+    System.out.println(big+1); // overflow
+    System.out.println(big+2);
+    
   }
 }
