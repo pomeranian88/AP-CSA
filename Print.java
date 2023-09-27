@@ -1,8 +1,17 @@
+import java.util.Scanner;
+
 public class Print
 {
+    private String name;
     Calculate clack = new Calculate();
 
+    public void getName(){
+        System.out.println("What's your name? ");
+        Scanner s = new Scanner(System.in);
+        name = s.next();
+    }
     public void print() {
+        Calculate clack = new Calculate(name);
         double side1 = clack.getSideOne();
         double side2 = clack.getSideTwo();
         double hyp = Math.sqrt(Math.pow(side1,2) + Math.pow(side2,2)); // calculate hypotenuse length
@@ -12,7 +21,7 @@ public class Print
         System.out.println("This triangle is a pythagorean triple: " + yon);
         System.out.println();
 
-        hyp = clack.Increase(side1, side2);
+        hyp = clack.Increase();
         value = (int)hyp;
         yon = (hyp - value) == 0.0; // redo all these calculation
         System.out.println("After increasing side1 by that amount and decreasing side2 by that amount...");
