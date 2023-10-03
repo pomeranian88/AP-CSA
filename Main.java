@@ -5,5 +5,6 @@ public class Main
     Print start = new Print();
     start.getName();
     start.print();
+    start.print2();
   }
 }
