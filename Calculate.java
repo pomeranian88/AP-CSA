@@ -16,8 +16,7 @@ public class Calculate
     }
 
     public void getSideOne() {
-        System.out.println("Welcome to the Pythagorean calculator, " + name + "!");
-        System.out.println("Enter side 1: ");
+        System.out.println("Welcome to the Pythagorean calculator, " + name + "!\nEnter side 1:"); // 2.6 PT.2&4
         Scanner s = new Scanner(System.in);
         side1 = s.nextInt(); // get side 1 length
     }
@@ -53,5 +52,9 @@ public class Calculate
     public double getHyp(){
         hyp = Math.sqrt(Math.pow(side1,2) + Math.pow(side2,2));
         return this.hyp;
+    }
+
+    public String toString(){
+        return side1 + " " + side2 + " " + hyp + " " + name;
     }
 }

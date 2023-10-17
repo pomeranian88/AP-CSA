@@ -6,5 +6,6 @@ public class Main
     start.getName();
     start.print();
     start.print2();
+    start.dothething();
   }
 }

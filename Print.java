@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Print
 {
-    private String name;
+    private String name; // 2.6 PT.1
     Calculate clack = new Calculate();
 
     public void getName(){
@@ -18,7 +18,7 @@ public class Print
         int value = (int) hyp; // cast hyp into a int to truncate it
         boolean yon = (hyp - value) == 0.0; // if subtracting the double - the truncated yields 0.0, it's a pythag triple
         System.out.println("The hypotenuse of this triangle is: " + hyp);
-        System.out.println("This triangle is a pythagorean triple: " + yon);
+        System.out.println("This triangle is a pythagorean triple: " + yon); // 2.6 PT.3
         System.out.println();
     }
 
@@ -29,5 +29,9 @@ public class Print
         System.out.println("After increasing side1 by that amount and decreasing side2 by that amount...");
         System.out.println("The hypotenuse of this triangle is: " + clack.getHyp());
         System.out.println("This triangle is a pythagorean triple: " + yon);
+    }
+
+    public void dothething(){
+        System.out.println(clack);
     }
 }
