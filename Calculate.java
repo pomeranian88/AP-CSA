@@ -38,23 +38,13 @@ public class Calculate
         side2 -= decrease;
         hyp = Math.sqrt(Math.pow(side1,2) + Math.pow(side2,2));
     }
-    public void Increase() {
-        System.out.println("User, how much do you want to increase side1 by?: ");
-        Scanner s = new Scanner(System.in);
-        int increase = s.nextInt();
-        this.side1 += increase; // increase side1 by specified amount
-        System.out.println("How much do you want to decrease side2 by?: ");
-        s = new Scanner(System.in);
-        int decrease = s.nextInt();
-        this.side2 -= decrease;
-        hyp = Math.sqrt(Math.pow(this.side1,2) + Math.pow(this.side2,2));
-    }
     public double getHyp(){
         hyp = Math.sqrt(Math.pow(side1,2) + Math.pow(side2,2));
         return this.hyp;
     }
 
     public String toString(){
-        return side1 + " " + side2 + " " + hyp + " " + name;
+        System.out.print("your final info: ");
+        return "side1 = " + side1 + ", side2 = " + side2 + ", hyp = " + hyp + ", name = " + name;
     }
 }
