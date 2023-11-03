@@ -4,8 +4,11 @@ public class Main
   {
     Print start = new Print();
     start.getName();
-    start.print();
-    start.print2();
-    start.dothething();
+    if (start.welcome() == 1) {
+      start.printTri();
+    }
+    else {
+      start.printSlope();
+    }
   }
 }
