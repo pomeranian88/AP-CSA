@@ -1,12 +1,13 @@
 import java.util.Scanner;
 
-
 public class Slope {
     private double x1;
     private double x2;
     private double y1;
     private double y2;
-
+    private double slope;
+    private double yInt;
+    private double hyp;
 
     public void getPoints() {
         Scanner s = new Scanner(System.in);
@@ -20,13 +21,14 @@ public class Slope {
         y2 = s.nextInt();
     }
     public void calculateSlope() {
-        double slope = (y2 - y1) / (x2 - x1);
+        slope = (y2 - y1) / (x2 - x1);
         System.out.print("The slope between points (" + x1 + ", " + y1 + ") and (" + x2 + ", " + y2 + ") is ");
         System.out.println(slope);
-        boolean pon = (slope > 0.0);
-        double yInt = (y2 - (slope *Math.abs(x2)));
-        System.out.println("This line has a positive slope: " + pon);
-        System.out.println("The y intercept of this line is " + yInt);
-        System.out.println("The equation of this line is: y = " + slope + "x + " + yInt);
+        yInt = (y2 - (slope *Math.abs(x2)));
+        hyp = Math.sqrt(Math.pow((y2 - y1), 2) + Math.pow((x2 - x1), 2));
     }
+    public double getSlope(){return slope;}
+    public double getYInt(){return yInt;}
+    public double getHyp(){return hyp;}
+
 }
