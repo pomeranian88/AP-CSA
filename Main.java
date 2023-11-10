@@ -4,11 +4,15 @@ public class Main
   {
     Print start = new Print();
     start.getName();
-    if (start.welcome() == 1) {
+    int choice = start.welcome();
+    if (choice==1) {
       start.printTri();
     }
-    else {
+    else if (choice==2){
       start.printSlope();
+    }
+    else {
+      System.out.println("weirdo!");
     }
   }
 }
