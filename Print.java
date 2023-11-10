@@ -12,8 +12,9 @@ public class Print
     }
     public int welcome(){
         System.out.println("Welcome to the Pythagorean Calculator!\n-------------------------");
-        System.out.println("Would you like to\n1) Calculate the hypotenuse of a triangle\n2) Calculate the slope between two points");
-        System.out.println("Enter 1 or 2: ");
+        System.out.println("Would you like to\n1) Calculate the hypotenuse of a triangle\n2) Calculate the " +
+                "slope between two points\n3) Quit because you didn't mean to open this");
+        System.out.println("Enter 1, 2, or 3: ");
         return s.nextInt();
     }
     public void printTri() {
