@@ -22,14 +22,14 @@ public class Print
         clack.getSides();
         clack.makeHyp();
         System.out.println("The hypotenuse of this triangle is: " + clack.getHyp());
-        System.out.println("This triangle is a pythagorean triple: " + clack.getTripleOrNot()); // 2.6 PT.3
+        System.out.println("This triangle is a pythagorean triple: " + clack.getTripleOrNot());
         System.out.println();
 
         clack.Increase(name);
-        clack.makeHyp();
         System.out.println("After increasing side1 by that amount and decreasing side2 by that amount...");
         System.out.println("The hypotenuse of this triangle is: " + clack.getHyp());
         System.out.println("This triangle is a pythagorean triple: " + clack.getTripleOrNot());
+        System.out.println("The hypotenuses of these triangles are equal: " + clack.getHypEquals());
     }
     public void printSlope() {
         Slope kack = new Slope();
