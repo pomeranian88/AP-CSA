@@ -20,16 +20,17 @@ public class Print
     public void printTri() {
         clack = new Calculate(name);
         clack.getSides();
-        clack.makeHyp();
         System.out.println("The hypotenuse of this triangle is: " + clack.getHyp());
         System.out.println("This triangle is a pythagorean triple: " + clack.getTripleOrNot());
         System.out.println();
+        Triangle firstOne = new Triangle(clack.getSide1(), clack.getSide2(), clack.getHyp());
 
         clack.Increase(name);
+        Triangle secondOne = new Triangle(clack.getSide1(), clack.getSide2(), clack.getHyp());
         System.out.println("After increasing side1 by that amount and decreasing side2 by that amount...");
         System.out.println("The hypotenuse of this triangle is: " + clack.getHyp());
         System.out.println("This triangle is a pythagorean triple: " + clack.getTripleOrNot());
-        System.out.println("The hypotenuses of these triangles are equal: " + clack.getHypEquals());
+        System.out.println("These triangles are equal : " + firstOne.equals(secondOne) + "\n");
     }
     public void printSlope() {
         Slope kack = new Slope();
