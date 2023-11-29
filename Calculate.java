@@ -31,7 +31,9 @@ public class Calculate
         side1 += increase;
         System.out.println("How much do you want to decrease side2 by?: ");
         int decrease = s.nextInt();
-        side2 -= decrease;
+        for (int i = 0; i<decrease; i++){ // CHECK THIS OVER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            side2--;
+        }
         makeHyp();
     }
     public void makeHyp(){
