@@ -27,6 +27,15 @@ public class Slope {
         yInt = (y2 - (slope *Math.abs(x2)));
         hyp = Math.sqrt(Math.pow((y2 - y1), 2) + Math.pow((x2 - x1), 2));
     }
+    public void getMorePoints(){
+        System.out.println("\nHere are some more points in your line:");
+        for(int i=0;i<5;i++){
+            for(int j=1;j<3;j++){
+                System.out.println("(" + (x2 + j+i) + ", " + (y2 + j+(i*slope)) + ")"); //4.4 nested iteration
+            }
+            i++;
+        }
+    }
     public double getSlope(){return slope;}
     public double getYInt(){return yInt;}
     public double getHyp(){return hyp;}
