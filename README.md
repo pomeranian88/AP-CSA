@@ -1,1 +1,1 @@
-Club Credit System done better than the school
+Club credit system done better than the school? Probably not
